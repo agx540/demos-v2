@@ -69,9 +69,19 @@ Ways to add styles
 
 If using a external file you can use enhanced editor features like code completion or syntax highlighting to edit css code.
 
+### CSS Scoping Module
 
-
+-:host
+  Select the host of our component.
+-:host-context
+  looks in all parent nodes if a class name is there.
+  Use it purposefully.
+-::ng-deep
+  it's deprecated now
 ## CSS Selectors
 
-Select all elements of type element containing a attribute with name attribute in it.
-element[attribute]
+-element[attribute]
+  Select all elements of type element containing a attribute with name attribute in it.
+-:host 
+-:host ul ::ng-deep a
+  how elements needs to be nested to match
